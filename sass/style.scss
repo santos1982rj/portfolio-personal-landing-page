@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+@import 'abstract/unit';
+@import 'abstract/variables';
+@import 'abstract/breakpoint';
+@import 'abstract/z-index';
+
+:root {
+  @each $name, $color in $project-colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+@import 'vendor/normalize';
+@import 'base/reset';
+
+@import 'base/typography';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: 0.5s;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--color-white-light);
+  scroll-behavior: smooth;
+}
+
+#themeMode {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 52px;
+  color: var(--color-primary-dark);
+  transition: 0.5s;
+}
+.border {
+  border: 1px solid red;
+}
+
+.dark-theme {
+  transition: 0.5s;
+  background-color: var(--color-black-dark);
+
+  .l-header__link {
+    color: var(--color-white-light);
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+}
+.container {
+  max-width: $container-xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+@import 'layout/l-header';

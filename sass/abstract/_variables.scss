@@ -1,0 +1,38 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+$project-colors: (
+  'primary-dark': #573c84,
+  'primary-light': #a487d5,
+  'primary-color': #845ec2,
+  'secondary-color': #00c9a7,
+  'secondary-dark': #008c74,
+  'secondary-light': #44dcc2,
+  //NEUTRAL COLOR
+  'black': #121017,
+  'black-light': #515055,
+  'black-dark': #040306,
+  'white': #f3eff9,
+  'white-light': #f9f7fd,
+  'white-dark': #e1dee4,
+  //GRAY SCALE
+  'gray-50': #bbbabb,
+  'gray-100': #a9a9a9,
+  'gray-200': #989898,
+  'gray-300': #878687,
+  'gray-400': #767576,
+  'gray-500': #676667,
+  'gray-600': #595859,
+  'gray-700': #4a494a,
+  //GRADIENT
+  'gradient-1': linear-gradient(89.9deg, #845ec2 20.01%, #6331b6 83.82%)
+);
+
+$z-indexes: (
+  'above': 500,
+  'modal': 400,
+  'overlay': 300,
+  'dropdown': 200,
+  'default': 1,
+  'below': -1
+);
