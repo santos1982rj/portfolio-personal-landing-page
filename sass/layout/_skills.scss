@@ -1,0 +1,7 @@
+$component-name: 'skills';
+.#{$component-name} {
+  .grid {
+    place-items: center;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,78 @@
+//Reusable Class
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 20px;
+}
+section {
+  padding: 5rem 0 5rem;
+}
+.full-section {
+  height: calc(100vh - 9rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include media('<=tablet') {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+
+.section-flag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: var(--primary);
+
+  border-radius: 5px;
+
+  font-size: rem(16);
+  font-weight: 400;
+  color: var(--primary-300);
+}
+
+.emphasis {
+  color: var(--primary);
+}
+.custom-shape-divider-bottom-1646321245 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646321245 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-bottom-1646321245 .shape-fill {
+  fill: #182131;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1646321245 svg {
+    width: calc(127% + 1.3px);
+    height: 146px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1646321245 svg {
+    width: calc(116% + 1.3px);
+    height: 72px;
+  }
+}

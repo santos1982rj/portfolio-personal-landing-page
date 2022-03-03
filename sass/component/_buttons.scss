@@ -1,0 +1,12 @@
+$component-name: 'btn';
+
+.#{$component-name} {
+  padding: 16px 24px;
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 5px;
+
+  font-size: rem(18);
+  font-weight: 500;
+  color: var(--primary-300);
+}
