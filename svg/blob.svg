@@ -30,6 +30,6 @@
 <stop offset="0.0403385" stop-color="#2E5399"/>
 <stop offset="1" stop-color="#80ACFF"/>
 </linearGradient>
-<image id="image0_388_36" width="345" height="578" xlink:href="../img/perfil.png"/>
+<image id="image0_388_36" width="345" height="578" xlink:href="./img/perfil.png"/>
 </defs>
 </svg>

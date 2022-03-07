@@ -12,7 +12,3 @@ skillBox.forEach(function (el, index) {
     iconBox[index].classList.remove('active');
   });
 });
-
-// skillBox.forEach(function (el, index) {
-
-// });
